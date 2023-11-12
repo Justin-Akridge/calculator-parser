@@ -1,11 +1,15 @@
 #include "token-stream.hpp"
+#include <iostream>
+#include <string>
 
 void Token_stream::error(std::string s) {
   std::cerr << s << '\n';
 }
 
-Token_stream::Token_stream() 
-    :full(false), buffer(0) {}
+Token_stream::Token_stream() {
+  full = false;
+  buffer = 0;
+}
 
 Token Token_stream::get() {
   if (full) {

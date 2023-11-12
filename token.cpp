@@ -1,11 +1,13 @@
+#include <iostream>
 #include "token.hpp"
+#include "token-stream.hpp"
 
 void Token::error(std::string s) {
   std::cerr << s << '\n';
 }
 
 Token::Token()
-  :kind(''), value(0) {};
+  :kind(), value(0) {};
 
 Token::Token(char ch)
   :kind(ch), value(0) {};

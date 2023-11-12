@@ -1,6 +1,7 @@
 #include <iostream>
+#include "token.hpp"
 #include "token-stream.hpp"
-#include "token.h"
+
 int main() {
   Token_stream ts;
   Token t;

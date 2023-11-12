@@ -10,9 +10,9 @@ public:
   Token();
   Token(char);
   Token(char, double);
-  double primary(Token_stream ts);
-  double term(Token_stream);
-  double expression(Token_stream);
+  double primary(Token_stream&);
+  double term(Token_stream&);
+  double expression(Token_stream&);
   void error(std::string);
 };
 
