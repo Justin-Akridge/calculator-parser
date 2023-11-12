@@ -1,2 +1,2 @@
 make:
-	clear && clang++ main.cpp token-stream.cpp token.cpp -o main && ./main
+	clear && clang++ token-stream.cpp token.cpp main.cpp -o main && ./main

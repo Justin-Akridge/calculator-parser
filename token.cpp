@@ -6,8 +6,7 @@ void Token::error(std::string s) {
   std::cerr << s << '\n';
 }
 
-Token::Token()
-  :kind(), value(0) {};
+Token::Token() {}
 
 Token::Token(char ch)
   :kind(ch), value(0) {};

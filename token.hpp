@@ -1,8 +1,8 @@
 #ifndef TOKEN_H
 #define TOKEN_H
 #include <string>
-#include "token-stream.hpp"
 
+class Token_stream;
 class Token {
 public:
   char kind;

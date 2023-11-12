@@ -19,7 +19,7 @@ Token Token_stream::get() {
   char ch;
   std::cin >> ch;
   switch(ch) {
-    case ';':
+    case '=':
     case 'q':
     case '+': case '-': case '*': case '/': case '%':
       return Token(ch);

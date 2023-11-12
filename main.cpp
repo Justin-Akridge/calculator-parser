@@ -6,10 +6,10 @@ int main() {
   Token_stream ts;
   Token t;
   double val = 0;
-  while (std::cin) {
+  while (true) {
     t = ts.get();
     if (t.kind == 'q') break;
-    if (t.kind == ';')
+    if (t.kind == '=')
       std::cout << "= " << val << '\n';
     else
       ts.putback(t);
